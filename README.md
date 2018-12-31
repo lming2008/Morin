@@ -1,2 +1,8 @@
-# Morin
-用Flutter模拟火币客户端
+# morin
+
+A new Flutter project.
+
+## Getting Started
+
+For help getting started with Flutter, view our online
+[documentation](https://flutter.io/).

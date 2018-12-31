@@ -1,0 +1,15 @@
+{
+    "title": "标题",
+    "label": {
+      "main": "你好 {user}!"
+    },
+    "button": {
+      "clickMe": "请点击"
+    },
+    "toastMessage": "提示信息内容!",
+    "clicked": {
+      "times-0": "你好 {times} volte!",
+      "times-1": "你好 {time} volta!",
+      "times-2": "你好 {times} volte!"
+    }
+  }

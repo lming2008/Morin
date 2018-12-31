@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/intro_slider/ios/Classes/IntroSliderPlugin.h
