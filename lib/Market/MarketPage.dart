@@ -96,7 +96,6 @@ class ChoicePageItem extends State<ChoicePage> {
   @override
   void initState() {
     super.initState();
-    initSocketData();
   }
 
 //}
@@ -262,54 +261,6 @@ class ChoicePageItem extends State<ChoicePage> {
         ),
       ),
     );
-  }
-
-  void initSocketData() async {
-    /*
-    final channel = await IOWebSocketChannel.connect("wss://api-cloud.huobi.co.kr/ws");
-    channel.stream
-        .listen(onData, onError: onError, onDone: onDone, cancelOnError: true);
-    ws['hq'] = channel;
-    sendMsg('{"sub":"market.overview"}');
-    */
-  }
-
-  void onData(message) {
-    /*
-    String msg = String.fromCharCodes(GZipDecoder().decodeBytes(message));
-    Map<String, dynamic> j = json.decode(msg);
-    if (j != null && j.containsKey("ping")) {
-      sendMsg(json.encode({"pong": j['ping']}));
-    } else {
-      onReceiveMsg(j);
-    }
-    */
-  }
-
-  void onError(error, StackTrace stackTrace) {}
-
-  void onDone() {}
-
-  void closeWs() {
-    ws['hq'].sink.close(status.goingAway);
-  }
-
-  void onReceiveMsg(Map<String, dynamic> msg) {
-    //TODO
-//    List coinList = msg['data'];
-    coins = msg['data'];
-    print(coins);
-//    for (int i = 0; i< (coinList.length -1);i++) {
-//      CoinSymbol coin = CoinSymbol.fromJson(coinList[i]);
-//      symbols.add(coin);
-//    }
-    setState(() {
-//    print(symbols);
-    });
-  }
-
-  void sendMsg(msg) {
-    //ws['hq'].sink.add(msg);
   }
 
   @override
