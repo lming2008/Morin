@@ -13,7 +13,8 @@ class IndexPage extends StatefulWidget {
   }
 }
 
-class IndexPageState extends State<IndexPage> with SingleTickerProviderStateMixin {
+class IndexPageState extends State<IndexPage>
+    with SingleTickerProviderStateMixin {
   TabController controller;
 
   @override
@@ -135,7 +136,7 @@ class IndexPageState extends State<IndexPage> with SingleTickerProviderStateMixi
       print("---->" + ScreenUtil().scaleWidth.toString());
       return imgList.map((bean) {
         return new Container(
-          margin: EdgeInsets.only(top: 15),
+          margin: EdgeInsets.only(top: 20),
           alignment: Alignment.center,
           width: ScreenUtil().setWidth(187),
           child: new Column(
@@ -157,9 +158,9 @@ class IndexPageState extends State<IndexPage> with SingleTickerProviderStateMixi
 
     ///功能区布局
     Widget functionLayout = new GridView.extent(
-      mainAxisSpacing: 11.0,
+      mainAxisSpacing: 0.0,
       crossAxisSpacing: 0.0,
-      maxCrossAxisExtent: ScreenUtil().setWidth(187),
+      maxCrossAxisExtent: ScreenUtil().setWidth(300),
       scrollDirection: Axis.horizontal,
       children: getFunctionListData(),
     );

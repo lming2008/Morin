@@ -31,7 +31,7 @@ class MorinApp extends StatelessWidget {
           primaryColor: Color(AppColors.AppBarColor),
           cardColor: Color(AppColors.AppBarColor)),
 
-      initialRoute: '/login',
+      initialRoute: '/',
       //路由
       routes: <String, WidgetBuilder>{
         '/': (BuildContext context) => LaunchPage(title: "Morin"),

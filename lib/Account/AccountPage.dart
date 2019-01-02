@@ -52,11 +52,12 @@ class _AccountPageState extends State<AccountPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: new Container(
+    return new Padding(
+      padding: const EdgeInsets.only(top: 50,left: 5.0,right: 5.0),
+      child: new Container(
+        width: 300.0,
         ///卡片包装
         child: new Card(
-
             ///增加点击效果
             child: new FlatButton(
                 onPressed: () {

@@ -56,13 +56,6 @@ class _HomePageState extends State<HomePage> {
             builder: (context) => new LoginFormTestRoute(title: "title")));
   }
 
-  void _index() {
-    Navigator.push(
-        context,
-        new MaterialPageRoute(
-            builder: (context) => new IndexPage(title: "INDEX")));
-  }
-
   void _i18n() {
     setState(() {
       currentLang = currentLang == 'en' ? 'zh' : 'en';
@@ -72,7 +65,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return new Padding(
-      padding: const EdgeInsets.all(5.0),
+      padding: const EdgeInsets.only(top: 50,left: 5.0,right: 5.0),
       child: new Column(
         //测试Row对齐方式，排除Column默认居中对齐的干扰
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -115,10 +108,6 @@ class _HomePageState extends State<HomePage> {
                 new OutlineButton(
                   child: Text("登录"),
                   onPressed: _login,
-                ),
-                new RaisedButton(
-                  child: Text("INDEX"),
-                  onPressed: _index,
                 ),
               ],
             ),

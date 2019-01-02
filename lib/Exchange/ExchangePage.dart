@@ -10,8 +10,14 @@ class ExchangePage extends StatefulWidget {
 class _ExchangePageState extends State<ExchangePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-       child: Text('exchange'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('exchange'),
+      ),
+      body: Column(
+        
+      ),
     );
+    
   }
 }
