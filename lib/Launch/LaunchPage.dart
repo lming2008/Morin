@@ -76,8 +76,7 @@ class _LaunchPageState extends State<LaunchPage> {
                   ), //MaterialPageRoute
                 );
               },
-              showSkipButton:
-                  true, //Whether you want to show the skip button or not.
+              showSkipButton: true, //Whether you want to show the skip button or not.
               pageButtonTextStyles: TextStyle(
                 color: Colors.white,
                 fontSize: 18.0,

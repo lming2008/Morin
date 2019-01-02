@@ -4,6 +4,12 @@ import 'package:morin/Constants/Constants.dart' show AppColors;
 import 'package:flutter_i18n/flutter_i18n_delegate.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:morin/Demos/Text.dart';
+import 'package:morin/Demos/StateManagement.dart';
+import 'package:morin/Demos/StreamDemo.dart';
+import 'package:morin/Demos/BlocDemo.dart';
+import 'package:morin/Demos/RxDartDemo.dart';
+import 'package:morin/Demos/HttpDemo.dart';
+import 'package:morin/Account/LoginPage.dart';
 
 void main() {
   runApp(MorinApp());
@@ -25,14 +31,21 @@ class MorinApp extends StatelessWidget {
           primaryColor: Color(AppColors.AppBarColor),
           cardColor: Color(AppColors.AppBarColor)),
 
+      initialRoute: '/login',
       //路由
       routes: <String, WidgetBuilder>{
         '/': (BuildContext context) => LaunchPage(title: "Morin"),
         '/one': (BuildContext context) => Page(title: 'page one'),
         '/two': (BuildContext context) => Page(title: 'page two'),
         '/three': (BuildContext context) => Page(title: 'page three'),
+        '/state': (BuildContext context) => StateManagementDemo(),
+        '/stream': (BuildContext context) => StreamDemoHome(),
+        '/bloc': (BuildContext context) => BlocDemo(),
+        '/rxdart': (BuildContext context) => RxdartDemo(),
+        '/http': (BuildContext context) => HttpDemo(),
+        '/login':(BuildContext context) => LoginFormTestRoute(title:'登录'),
       },
-      initialRoute: '/',
+      
     );
   }
 }
