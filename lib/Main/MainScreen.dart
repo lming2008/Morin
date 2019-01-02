@@ -5,6 +5,7 @@ import '../Index/IndexPage.dart';
 import '../Account/AccountPage.dart';
 import '../Exchange/ExchangePage.dart';
 import '../Home/HomePage.dart';
+import '../Demos/HttpDemo.dart';
 
 class NavigationIconView {
   final BottomNavigationBarItem item;
@@ -79,7 +80,7 @@ class _MainScreenState extends State<MainScreen> {
       IndexPage(
         title: "",
       ),
-      MarketPage(),
+      HttpDemo(),
       HomePage(title: '',),
       AccountPage(
         title: "account",
