@@ -5,9 +5,11 @@ import 'package:morin/Index/IndexPage.dart';
 import 'package:flutter_i18n/flutter_i18n.dart';
 
 class HomePage extends StatefulWidget {
+
   HomePage({Key key, this.title}) : super(key: key);
 
   final String title;
+
 
   _HomePageState createState() => _HomePageState();
 }
