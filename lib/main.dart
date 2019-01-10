@@ -34,21 +34,21 @@ class MorinApp extends StatelessWidget {
           primaryColor: Color(AppColors.AppBarColor),
           cardColor: Color(AppColors.AppBarColor)),
 
-      initialRoute: 'scopedmodel',
+      initialRoute: 'redux',
       //路由
       routes: <String, WidgetBuilder>{
         '/': (BuildContext context) => LaunchPage(title: "Morin"),
         '/one': (BuildContext context) => Page(title: 'page one'),
         '/two': (BuildContext context) => Page(title: 'page two'),
         '/three': (BuildContext context) => Page(title: 'page three'),
-        '/state': (BuildContext context) => StateManagementDemo(),
+        'state': (BuildContext context) => StateManagementDemo(),
         'scopedmodel':(BuildContext context) => ScopedmodelDemo(),
-        '/stream': (BuildContext context) => StreamDemoHome(),
-        '/bloc': (BuildContext context) => BlocDemo(),
-        '/rxdart': (BuildContext context) => RxdartDemo(),
-        '/http': (BuildContext context) => HttpDemo(),
-        '/redux':(BuildContext context) => ReduxDemo(title: 'Redux Demo',),
-        '/login':(BuildContext context) => LoginFormTestRoute(title:'登录'),
+        'stream': (BuildContext context) => StreamDemoHome(),
+        'bloc': (BuildContext context) => BlocDemo(),
+        'rxdart': (BuildContext context) => RxdartDemo(),
+        'http': (BuildContext context) => HttpDemo(),
+        'redux':(BuildContext context) => ReduxDemo(),
+        'login':(BuildContext context) => LoginFormTestRoute(title:'登录'),
       },
       
     );
