@@ -7,11 +7,11 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:morin/Demos/Text.dart';
 import 'package:morin/Demos/StateManagement.dart';
 import 'package:morin/Demos/StreamDemo.dart';
-import 'package:morin/Demos/BlocDemo.dart';
 import 'package:morin/Demos/RxDartDemo.dart';
 import 'package:morin/Demos/HttpDemo.dart';
 import 'package:morin/Demos/ScopedmodelDemo.dart';
 import 'package:morin/Account/LoginPage.dart';
+import 'package:morin/Demos/VideoPlayerDemo.dart';
 
 
 void main() {
@@ -34,21 +34,21 @@ class MorinApp extends StatelessWidget {
           primaryColor: Color(AppColors.AppBarColor),
           cardColor: Color(AppColors.AppBarColor)),
 
-      initialRoute: 'redux',
+      initialRoute: 'videoplayer',
       //路由
       routes: <String, WidgetBuilder>{
         '/': (BuildContext context) => LaunchPage(title: "Morin"),
-        '/one': (BuildContext context) => Page(title: 'page one'),
-        '/two': (BuildContext context) => Page(title: 'page two'),
-        '/three': (BuildContext context) => Page(title: 'page three'),
+        'one': (BuildContext context) => Page(title: 'page one'),
+        'two': (BuildContext context) => Page(title: 'page two'),
+        'three': (BuildContext context) => Page(title: 'page three'),
         'state': (BuildContext context) => StateManagementDemo(),
         'scopedmodel':(BuildContext context) => ScopedmodelDemo(),
         'stream': (BuildContext context) => StreamDemoHome(),
-        'bloc': (BuildContext context) => BlocDemo(),
         'rxdart': (BuildContext context) => RxdartDemo(),
         'http': (BuildContext context) => HttpDemo(),
         'redux':(BuildContext context) => ReduxDemo(),
         'login':(BuildContext context) => LoginFormTestRoute(title:'登录'),
+        'videoplayer':(BuildContext context) => VideoPlayerDemo(),
       },
       
     );

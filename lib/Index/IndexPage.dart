@@ -424,9 +424,9 @@ class IndexPageState extends State<IndexPage>
 
   Widget swiperBuilder(BuildContext context, int index) {
     List<String> img = [
-      "https://huobi-1253283450.file.myqcloud.com/bit/banner/556fd6a2-5cf2-423c-bb9a-8fed13de093e.jpg",
-      "https://huobi-1253283450.file.myqcloud.com/bit/banner/556fd6a2-5cf2-423c-bb9a-8fed13de093e.jpg",
-      "https://huobi-1253283450.file.myqcloud.com/bit/banner/f0d03208-35cb-4fba-a36d-c8aa2e479491.jpg"
+      "http://www.baidu.com",
+      "http://www.baidu.com",
+      "http://www.baidu.com"
     ];
     return (ClipRRect(
         borderRadius: BorderRadius.circular(4.0),
